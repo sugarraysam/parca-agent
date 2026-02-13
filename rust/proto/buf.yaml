@@ -1,0 +1,12 @@
+version: v2
+modules:
+  - path: parca
+    name: buf.build/parca-dev/parca
+deps:
+  - buf.build/googleapis/googleapis
+lint:
+  use:
+    - DEFAULT
+    - COMMENTS
+  ignore:
+    - google/pprof/profile.proto
